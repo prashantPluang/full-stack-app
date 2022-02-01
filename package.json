@@ -1,0 +1,36 @@
+{
+  "name": "full-stack-app",
+  "version": "1.0.0",
+  "description": "Full stack App with node, typescript and react",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon ./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantPluang/full-stack-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashantPluang/full-stack-app/issues"
+  },
+  "homepage": "https://github.com/prashantPluang/full-stack-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.9",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.13"
+  }
+}
