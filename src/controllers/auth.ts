@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import {User} from '../models/user';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import {config} from '../config';;
+import {config} from '../config';
 
 const register = (req: Request, res: Response) => {
     const {name,email,password, pic} = req.body; 
