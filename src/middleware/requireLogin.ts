@@ -2,9 +2,9 @@ import { NextFunction, Request, Response} from 'express';
 import jwt from 'jsonwebtoken';
 import {config} from '../config';
 import {User} from '../models/user';
-import { JwtPayload, customRequest} from '../types/interface';
+import { JwtPayload, CustomRequest} from '../types/interface';
 
-const requireLogin = (req: customRequest, res: Response, next: NextFunction)=>{
+const requireLogin = (req: CustomRequest, res: Response, next: NextFunction)=>{
     const {authorization} = req.headers;
     if(!authorization){
        return res.status(401).json({error:"you must be logged in"});

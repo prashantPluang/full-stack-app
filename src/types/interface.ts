@@ -18,10 +18,10 @@ export interface postInterface extends Document{
     photo: string,
     likes: [],
     comment: [],
-    postedBy: typeof ObjectId
+    postedBy: userInterface
 }
 
-export interface customRequest extends Request {
+export interface CustomRequest extends Request {
     user? : (userInterface & {
         _id: string;
     }) | null

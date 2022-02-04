@@ -13,7 +13,7 @@ const postSchema = new mongoose.Schema({
     },
     photo:{
         type:String,
-        default: "apic"
+        required:true
     },
     likes:[{type:ObjectId,ref:"User"}],
     comments:[{
